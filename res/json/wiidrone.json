@@ -1,0 +1,8 @@
+{
+  "name": "WiiDrone",
+  "slogan": "Für Innovation und Fortschritt",
+  "description": "<p>Warum macht man das? Einfach, weil man es kann! Anders hat es sich hier auch nicht zu getragen. Im ICT Berufsbildungscenter haben wir währendem Projektmodul die wohl verrückteste Idee umgesetzt: Lass eine Drohne mithilfe einer Wii Fernbedienung steuern.</p><p>Es hat viel Mühe gekostet, um alle technische Schwierigkeiten zu überwinden. Aber es hat sich gelohnt! Unsere Drohne flog mithilfe einer Wii Fernbedienung und lieferte dabei auch noch Livebilder vom Flug!</p>",
+  "image": "/res/img/wiidrone.jpg",
+  "video": "https://www.youtube.com/watch?v=Uo6L4TMlLZw",
+  "git": "https://github.com/2e12/WiiDrone"
+}

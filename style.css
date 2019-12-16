@@ -1,0 +1,260 @@
+html, body{
+  height: 100%;
+}
+
+body{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size:18px;
+    text-align: justify;
+}
+h1,h2,h3,input,.header, .ref_header, .glow_button, .block_list{
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+h1,h2,h3{
+  margin-bottom: 24px;
+  margin-top: 32px;
+}
+p{
+  margin-top:16px;
+  margin-bottom: 16px;
+  color:#303030;
+}
+*{
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
+}
+
+.fadein{
+  opacity: 0;
+}
+.fadein, .card{
+  transform: translateY(3vh);
+  transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
+}
+
+.block_list{
+  list-style: none;
+}
+
+.block_list li{
+  display: inline-block;
+  padding:8px;
+  background: #303030;
+  color:white;
+  margin-bottom:8px;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto minmax(200px, 900px) auto;
+  grid-template-rows: 64px auto;
+  grid-template-areas: ". header ." ". content .";
+}
+
+.header { 
+  grid-area: header;
+  line-height: 62px;
+  display: flex;
+  text-align: center;
+ }
+
+.flex_btn {
+    width: 32px;
+    height: 64px;
+    margin-left:32px;
+    padding-top:12px;
+}
+
+.flex_btn div{
+  width:100%;
+  height:2px;
+  margin-top: 8px;
+  background:#303030;
+}
+
+.header .flex_text{
+  text-align: center;
+  flex-grow: 1;
+}
+
+.content { 
+  grid-area: content;
+}
+
+.content .section{
+  padding-left:32px;
+  padding-right: 32px;
+  margin-bottom:32px;
+  margin-top:64px;
+}
+
+.card{
+  display: inline-block;
+  box-shadow: 0px 5px 32px -8px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  width:200px;
+  height:280px;
+  margin:32px;
+  text-decoration: none;
+  background-size: cover !important;
+  background-position: center top !important;
+  cursor: pointer;
+}
+
+.card .card_grid{
+  display: grid;
+  width:100%;
+  height:100%;
+  grid-template-columns:  auto;
+  grid-template-rows: auto min-content;
+  grid-template-areas: "." "heading";
+  border-radius: inherit;
+}
+
+.card_heading { 
+  grid-area: heading; 
+  padding:16px;
+  color:white;
+  border-radius: inherit;
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+  white-space: pre-line;
+}
+
+.card_heading *{ 
+  padding:0px;
+  margin:0px;
+}
+
+
+.horizontal_scroll{
+  white-space: nowrap;
+  overflow-y: hidden;
+  width:100%;
+}
+
+.history .section {
+    display: flex;
+    padding:0px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.history .section *{
+  margin:0px;
+  padding:0px;
+}
+
+.history .section div{
+  margin:0px;
+  padding:16px;
+}
+
+.history .section .icon{
+  padding-left:0px;
+  width:40px;
+  color:#303030;
+}
+
+.glow_button {
+  min-width:260px;
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  background: #0039ff;
+  box-shadow: 0px 10px 24px -4px rgba(0,57,255,0.5);
+  margin-bottom:24px;
+  cursor: pointer;
+}
+
+.red{
+  background: #da1f1f;
+  box-shadow: 0px 10px 24px -4px #da1f1f80;
+}
+
+.green{
+  background: #4ddf71;
+  box-shadow: 0px 10px 24px -4px #4ddf7180;
+}
+
+.transparent{
+  color: black;
+  background: none;
+  box-shadow: none;
+}
+
+#detail_view p{
+  /** color:#e0e0e0; **/
+}
+
+#detail_view .glow_button{
+  width:100%;
+}
+
+#detail_view {
+  display: none;
+  min-height: 100%;
+  grid-template-columns: auto minmax(200px, 600px) auto;
+  grid-template-rows: calc(100vh - 60px) max-content;
+  grid-template-areas: " . ref_header . " " . ref_text . ";
+  overflow: auto;
+}
+
+#detail_view .section {
+  margin-bottom: 64px;
+}
+
+.ref_header { 
+  grid-area: ref_header;
+  background: url(/res/img/urban_food.jpg);
+  background-size: cover !important; 
+  background-position: center top !important;
+  display: grid;
+  border-radius: 0px 0px 32px 32px;
+  grid-template-columns:  auto;
+  grid-template-rows: auto min-content;
+  grid-template-areas: "." "heading_text";
+  box-shadow: 0px 5px 32px -8px rgba(0, 0, 0, 0.35);
+}
+
+.ref_header p{
+  color:white;
+}
+
+.ref_header *{ 
+  padding:0px;
+  margin:0px;
+  border-radius: 0px 0px 32px 32px;
+}
+
+.ref_heading_text #down{
+  text-align: center;
+  margin-top:32px;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.ref_text { 
+  grid-area: ref_text; 
+  padding:32px;
+}
+
+.ref_heading_text{
+  grid-area: heading_text;
+  padding:32px;
+  color:white;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+}
+
+@media only screen and (max-width: 500px) {
+  .glow_button{
+    width:100%;
+  }
+}
