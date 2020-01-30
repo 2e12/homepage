@@ -3,6 +3,6 @@
   "slogan": "fast & healthy food",
   "description": "<p>Urban food entstand als Projektarbeit im ICT Berufsbildungscenter währenddem Webapplikationsmodul. Erwartet wurde eine interaktive Webseite. Diese musste mit PHP und MySQL umgesetzt werden. Wir entschieden uns für einen online Foodstore.</p><p> Es wurde viel Wert auf eine simple Navigation gelegt. Das Design ist Responsive und für Mobilgeräte im Fokus entwickelt worden. Beim Design entschieden wir uns für natürliche, aber starke Farben. Ein übersichtliches & aufgeräumtes Angebot sollte den User nicht überfordern.</p>",
   "image": "/res/img/urban_food.jpg",
-  "preview": "http://bbeutg.bbc-projects.ch/",
+  "preview": "https://urbanfood.herokuapp.com/",
   "git": "https://github.com/2e12/Urban-Food"
 }
