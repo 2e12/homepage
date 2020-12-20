@@ -1,6 +1,0 @@
-{
-  "name": "Biker",
-  "slogan": "Simpler Velocomputer",
-  "description": "<p>Als Projektarbeit im Appentwicklungsmodul, entschieden wir uns, einen Velocomputer zu entwickeln. Dieser zeichnet die Strecke, die man mit dem Fahrrad fährt auf und speichert diese. Ebenfalls bietet die App live Informationen, wie Standort und die aktuelle Geschwindigkeit.</p>",
-  "image": "/res/img/biker.jpg"
-}
