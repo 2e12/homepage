@@ -36,6 +36,11 @@ h3{
   max-width: 250px;
   margin-top:32px;
   box-shadow: 0px 5px 32px -8px rgba(0, 0, 0, 0.4);
+  transition: 2s;
+}
+.profile-image:hover{
+  transform: scale(1.1) translateY(-25px);
+  box-shadow: 0px 10px 38px -4px rgba(0, 0, 0, 0.8);
 }
 section{
   padding-top:42px;
@@ -47,6 +52,12 @@ section{
 p.text{
   text-align: justify;
 }
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 38px -4px rgba(0,57,255,0.8);
+}
+
 .button {
     width: 100%;
     display: inline-block;
@@ -59,4 +70,5 @@ p.text{
     box-shadow: 0px 10px 24px -4px rgba(0,57,255,0.5);
     margin-bottom: 40px;
     cursor: pointer;
+    transition: 0.1s;
 }
